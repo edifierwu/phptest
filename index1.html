@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanstc.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        /*  老師常用預設設定*/
+        
+        * {
+            /*  字體設定*/
+            font-family: "Montserrat", "Noto Sans TC", sans-serif;
+            box-sizing: border-box;
+        }
+        /*  標籤元素設定*/
+        
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul,
+        ol,
+        li {
+            margin: 0;
+            padding: 0;
+        }
+        /*  清除浮動設定*/
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        p {
+            color: rgba(75, 82, 71, 0.51);
+            line-height: 2;
+        }
+        /*  圖片貼合背景區塊設定*/
+        
+        img {
+            /*  max-width: 100%; 顯示圖片原始尺寸*/
+            width: 100%;
+            vertical-align: top;
+        }
+        
+        .container {
+            width: 100%;
+        }
+        
+        . .wrapper {
+            width: 1200px;
+            margin: auto;
+        }
+        
+        .wrapper-s {
+            width: 850px;
+            margin: auto;
+        }
+        
+        .col-3 {
+            width: calc(100% / 3);
+            padding: 15px;
+            float: left;
+        }
+        
+        .col-4 {
+            width: calc(100% / 4);
+            padding: 15px;
+            float: left;
+        }
+        /*************   NAV選單   *************/
+        
+        nav .logo {
+            float: left;
+            letter-spacing: 3px;
+            font-weight: 700;
+            line-height: 70px;
+        }
+        
+        nav .menu {
+            float: right;
+        }
+        
+        nav .menu li {
+            float: left;
+            list-style: none;
+        }
+        
+        nav .menu a {
+            display: block;
+            text-decoration: none;
+            color: #18f205;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 14px;
+            line-height: 70px;
+        }
+        
+        header {
+            background-image: url(images/002.jpg);
+            background-repeat: none;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            height: 600px;
+            display: table;
+        }
+        
+        header .wrapper{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        header .wrapper-s{
+            background-color: aqua
+        }
+        header h1 {
+            font-size: 52px;
+            letter-spacing: 5px;
+        }
+        
+        nav {
+            background-color: #edbf00;
+        }
+        /**********works******************/
+        
+        #works {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            text-align: center;
+            
+        }
+        
+        #works p {
+            margin-top: 15px;
+        }
+        /************banner***************************/
+        
+        #banner {
+            background-image: url(images/004.jpg);
+             background-repeat: none;
+            background-size: cover;
+            background-position: center;
+            padding-top: 150px;
+             padding-bottom: 150px;
+            
+        }
+        #service .wrapper:nth-of-type(1) 
+            {
+                text-align: center;
+            }
+        #service .wrapper:nth-of-type(1) p
+            {
+                margin-top: 30px;
+                
+            }
+        #service h3{
+            margin-top: 30px;
+            margin-bottom: 30px;
+                
+        }
+        #service .icon{
+            width: 40px;
+            height 40px;
+            background-color: #a8a8a8;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="container clearfix ">
+        <div class="wrapper">
+            <div class="logo">test-STYLE</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">WORKS</a></li>
+                    <li><a href="">SERVICE</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="container ">
+        <div class="wrapper">
+           <div class="wrapper-s">
+            <h1>AMAZING AMIS</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum illum accusamus, facilis odio commodi animi laudantium eaque dolor asperiores minus!</p>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container" id="works">
+
+        <div class="wrapper">
+           <div class="wrapper-s">
+            <h1>AMAZING AMIS</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus magni reprehenderit, distinctio illo, rerum nemo.asdhfdhethqfdsagadsgf.gsada09r  ewi9w9e9ewfipawegiwgh84998fu8weofowergopagjopo weopjfpwoefojfwoejfpjaoefjoapojowefopawjepfoapowepofajpewojjf88 oaiwjwoefojiwaogoawghoiwoifoiwhiofoiafiojwoajfiojfwaiofaghoiwoihg woihfoiwfoiiwoi wf oiwiiof w fwoifoiw884iowew8fio w fi</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="container" id="banner">
+        
+    </div>
+    <div class="container" id="service">
+    <div class="wrapper">
+        <h2>BEST SERVICE</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus magni reprehenderit, distinctio illo, rerum nemo.
+        </p>
+    </div>
+    <div class="wrapper clearfix">
+        <div class = "col-3">
+            <div class="icon"><span class="fa fa-bell fa5x"></span></div>
+            
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis similique provident illo voluptatum natus non incidunt, vero impedit, veniam harum architecto dolor sunt, iste aut iusto soluta distinctio. Asperiores?</p>
+        </div>
+        <div class = "col-3">
+            <div class="icon"><span class="fa fa-bell fa5x"></span></div>
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis similique provident illo voluptatum natus non incidunt, vero impedit, veniam harum architecto dolor sunt, iste aut iusto soluta distinctio. Asperiores?</p>
+        </div>
+        <div class = "col-3">
+            <div class="icon"><span class="fa fa-bell fa5x"></span></div>
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis similique provident illo voluptatum natus non incidunt, vero impedit, veniam harum architecto dolor sunt, iste aut iusto soluta distinctio. Asperiores?</p>
+        </div>
+    </div>
+    
+    <div class="wrapper clearfix">
+        <div class = "col-3">
+            <div class="icon"><span class="fa fa-bell fa5x"></span></div>
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis similique provident illo voluptatum natus non incidunt, vero impedit, veniam harum architecto dolor sunt, iste aut iusto soluta distinctio. Asperiores?</p>
+        </div>
+        <div class = "col-3">
+            <div class="icon"><span class="fa fa-bell fa5x"></span></div>
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis similique provident illo voluptatum natus non incidunt, vero impedit, veniam harum architecto dolor sunt, iste aut iusto soluta distinctio. Asperiores?</p>
+        </div>
+        <div class = "col-3">
+            <div class="icon"><span class="fa fa-bell fa5x"></span></div>
+            <h3>Web Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis similique provident illo voluptatum natus non incidunt, vero impedit, veniam harum architecto dolor sunt, iste aut iusto soluta distinctio. Asperiores?</p>
+        </div>
+    </div>
+</div>
+
+    <!--
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper-s"></div>
+            <div class="col-3">
+                <h2>qwert</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis similique provident illo voluptatum natus non incidunt, vero impedit, veniam harum architecto dolor sunt, iste aut iusto soluta distinctio. Asperiores?</p>
+
+            </div>
+            <div class="col-3">
+                <h2>qwert</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis similique provident illo voluptatum natus non incidunt, vero impedit, veniam harum architecto dolor sunt, iste aut iusto soluta distinctio. Asperiores?</p>
+
+            </div>
+            <div class="col-3">
+                <h2>qwert</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi officiis similique provident illo voluptatum natus non incidunt, vero impedit, veniam harum architecto dolor sunt, iste aut iusto soluta distinctio. Asperiores?</p>
+
+            </div>
+        </wrapper>
+    </div>
+-->
+</body>
+
+</html>

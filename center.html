@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>center2</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 400px;
+            background-color: #ccc;
+/*            display: table;  第二種置中方式*/
+            text-align: center;
+        }
+        .container::before /*行內置中*/
+        {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+            
+        }
+        .box{
+            display: inline-block;/*主流置中方式*/
+/*            display: table-cell; 多行置中*/
+            vertical-align: middle;
+            background-color: #0af;
+/*            text-align: center;只適用單行垂直至中*/
+/*            line-height: 400px;*/
+            width: 300px;
+        }
+        h1{
+/*            text-align: center;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>bradwu</h1>
+            <p> rogwjfijw aifjowaj eijofoiwajaij foiwe
+            </p>
+        </div>
+    </div>
+</body>
+</html>

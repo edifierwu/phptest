@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https//fonts.googleapis.com/earlyaccess/notosanstc.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Web</title>
+
+    <style>
+        /* Default Web Setting */
+
+        * {
+            font-family: "Raleway", "Noto Sans tc";
+            box-sizing: border-box;
+        }
+
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        /* *********************************** */
+
+        .container {
+            width: 100%;
+        }
+
+        .wrapper {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .wrapper-s {
+            width: 800px;
+            margin: auto;
+        }
+
+        .col-3 {
+            width: calc(100% / 3);
+            padding: 15px;
+            float: left;
+        }
+
+        .col-4 {
+            width: calc(100% / 4);
+            padding: 15px;
+            float: left;
+        }
+
+        p {
+            color: #2C2D2C;
+            line-height: 2;
+        }
+
+
+
+        /* Nav */
+
+        nav {
+            background-color: #EFEFEF;
+            /* color:white; */
+        }
+
+        nav .logo {
+            float: left;
+            line-height: 70px;
+            letter-spacing: 5px;
+            font-weight: 400;
+            font-size: 24px;
+        }
+
+
+        nav .menu {
+            float: right;
+            line-height: 40px;
+        }
+
+
+        nav .menu li {
+            float: left;
+            list-style: none;
+
+        }
+
+        nav .menu a {
+            display: block;
+            color: #000;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* Header */
+
+        header {
+            background-image: url(images/header.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            text-align: center;
+            line-height: 40px;
+
+            height: 600px;
+            display: table;
+
+        }
+
+        header .wrapper {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        /* **************** */
+
+        #works {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            line-height: 2;
+            text-align: center;
+        }
+
+        #works p {
+            margin-top: 15px;
+        }
+
+        /* **************** */
+
+        #banner {
+            /* background-image: url(images/003.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center; */
+            background-color: #424341;
+
+            height: 300px;
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+
+        /* **************** */
+
+        #service {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        #service .wrapper:nth-of-type(1) {
+            text-align: center;
+        }
+
+        #service p {
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        #service h2 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* #service .icon{
+          width: 40px;
+          height: 40px;
+          background: #CCC;
+      } */
+
+        #customer {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            text-align: center;
+            background-color: #000000;
+            color: #cccccc;
+
+        }
+
+        #customer h2 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        #customer p {
+            color: #cccccc;
+        }
+
+        #customer p:nth-of-type(3) {
+
+            color: #ECECEC;
+            margin-top: 15px;
+
+        }
+
+        /*  */
+
+        #about-us {
+            padding-top: 75px;
+            padding-bottom: 75px;
+            text-align: center;
+        }
+
+        #about-us .wrapper h2 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        #about-us .wrapper h3 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #about-us .wrapper p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #about-us img {
+            display: inline-block;
+            /* vertical-align: center; */
+            width: 350px;
+            height: 400px;
+            background-color: #000;
+        }
+
+        /*  */
+
+        #purchase-now {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            text-align: center;
+            background-color: #000000;
+            color: #cccccc;
+        }
+
+        #purchase-now button {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            background-color: #000;
+            /* Green */
+            border: 2px solid #ffffff;
+
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+
+        #purchase-now p {
+            color: #cccccc;
+            font-size: 36px;
+        }
+
+        /*  */
+
+        #latest-news {
+            padding-top: 75px;
+            padding-bottom: 75px;
+            text-align: center;
+        }
+
+        #latest-news img {
+            display: inline-block;
+            height: 200px;
+            width: 250px;
+            background: #C6C4C4;
+        }
+
+        #latest-news h3 {
+            margin: 15px 15px;
+            font-size: 14px;
+
+        }
+
+        #latest-news p {
+            margin: 15px 15px;
+            font-size: 14px;
+
+        }
+
+        #latest-news .photo. date {
+            position: absolute;
+            top: 0;
+
+        }
+
+        /*  */
+
+        /* #sponsor
+      {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        background: black;
+        height: 200px;
+      }*/
+
+        /*  */
+
+        #contact {
+            padding: 75px 150px;
+            text-align: center;
+        }
+
+
+        /************************************************/
+
+        /*sposor*/
+
+        #sponsor {
+            text-align: center;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            background-color: #000;
+            color: #7b7b7b;
+            font-size: 0;
+        }
+
+        #sponsor .brand {
+            display: inline-block;
+            width: calc(100%/6);
+            font-size: 16px;
+        }
+
+        /*========================================================================*/
+
+        /*Contect*/
+
+        #contact {
+            padding-top: 150px;
+            padding-bottom: 150px;
+
+        }
+
+        #contact .wrapper:nth-last-of-type(1) {
+            text-align: center;
+        }
+
+        #contact p:nth-of-type(1) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        #contact .item {
+            margin-top: 45px;
+
+        }
+        #contact  .info {
+            float: left;
+        }
+        #contact .info li {
+            list-style: none;
+            line-height: 2em;
+
+        }
+
+        #contact .info .icon {
+            float: left;
+        }
+
+        #contact .info .content {
+            float: left;
+            widows: 80px;
+            /*            text-align: center;*/
+        }
+
+        #contact .info .content {
+            float: left;
+            width: 320px;
+        }
+
+        #contact .form {
+            width: 800px;
+            float: left;
+        }
+
+        .col-2 {
+            width: 50%;
+            padding: 15px;
+            float: left;
+        }
+
+        #contact .form input[type=text] {
+            width: 100%;
+            padding: 15px;
+
+        }
+
+        #contact .form textarea {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        #contact .form button {
+            padding: 15px 30px;
+            letter-spacing: 2px;
+            border: 0;
+            background-color: #00bc7b;
+            color: #fff;
+        }
+
+        /*************************************************************************/
+
+        /* footer */
+
+        footer {
+            padding-top: 150px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer .logo {
+            font-size: 2em;
+            letter-spacing: 2px;
+
+        }
+
+        footer .social {
+            margin-top: 30px;
+            margin-bottom: 150px;
+        }
+
+        footer .social a {
+            text-decoration: none;
+            color: #a8a8a8;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        footer .copy {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="container">
+        <div class="wrapper clearfix">
+            <div class="logo">Nexticc</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">WORKS</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONACT</a></li>
+                    <li><a href="#">ALL DEMOS</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--  -->
+    <header class="container">
+        <div class="wrapper">
+            <div class="wrapper-s">
+                <h1>AMAZING STUDIO</h1>
+                <p>
+                    Lorem ipsum dolor sit amet.
+                </p>
+
+            </div>
+        </div>
+
+    </header>
+
+    <!--  -->
+    <div class="container" id="works">
+
+        <div class="wrapper-s">
+
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, non.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil ducimus dolores dignissimos cumque repellat in veniam veritatis expedita culpa et.</p>
+
+        </div>
+
+    </div>
+
+    <!--  -->
+    <div class="container" id="banner"></div>
+
+    <!--  -->
+    <div class="container" id="service">
+
+        <div class="wrapper">
+            <h2>BEST SERVICES</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus et labore numquam!</p>
+        </div>
+
+        <div class="wrapper clearfix">
+            <div class="col-3">
+                <div class="icon"><span class="fa fa-book fa-4x"></span></div>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, illum aut praesentium molestias ab architecto magni beatae eum? Adipisci, eum.</p>
+            </div>
+
+            <div class="col-3">
+                <div class="icon"><span class="fa fa-book fa-4x"></span></div>
+                <h2>E-mail Marketing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, illum aut praesentium molestias ab architecto magni beatae eum? Adipisci, eum.</p>
+            </div>
+
+            <div class="col-3">
+                <div class="icon"><span class="fa fa-book fa-4x"></span></div>
+                <h2>App Development</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, illum aut praesentium molestias ab architecto magni beatae eum? Adipisci, eum.</p>
+            </div>
+
+        </div>
+
+        <div class="wrapper clearfix">
+            <div class="col-3">
+                <div class="icon"><span class="fa fa-book fa-4x"></span></div>
+                <h2>Customers Support</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, illum aut praesentium molestias ab architecto magni beatae eum? Adipisci, eum.</p>
+            </div>
+
+            <div class="col-3">
+                <div class="icon"><span class="fa fa-book fa-4x"></span></div>
+                <h2>Seo Optimization</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, illum aut praesentium molestias ab architecto magni beatae eum? Adipisci, eum.</p>
+            </div>
+
+            <div class="col-3">
+                <div class="icon"><span class="fa fa-book fa-4x"></span></div>
+                <h2>Branding</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, illum aut praesentium molestias ab architecto magni beatae eum? Adipisci, eum.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="container" id="customer">
+        <div class="wrapper">
+
+            <h2>HAPPY CUSTOMERS</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto porro sapiente repudiandae ab iste dignissimos!porro sapiente repudiandae abouslte</p>
+            <p>Sara Simpon,CEO of com.</p>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="container clearfix" id="about-us">
+        <div class="wrapper">
+
+            <h2>ABOUT US</h2>
+
+            <p>We help our client market to the world and inspire minds of people</p>
+
+            <div class="col-3">
+                <div><img src="images/" alt=""></div>
+                <h3>David Geller</h3>
+                <p>CEO of Company</p>
+            </div>
+
+            <div class="col-3">
+                <div><img src="#" alt=""></div>
+                <h3>Monica Bing</h3>
+                <p>Art Director</p>
+            </div>
+
+            <div class="col-3">
+                <div><img src="#" alt=""></div>
+                <h3>Joey Tribbiani</h3>
+                <p>Lead Designer</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="container" id="purchase-now">
+        <div class="wrapper">
+
+            <p>Are You Ready? To join us? Grab the perfect threme now!</p>
+
+            <button type="button">PURCHASE NOW</button>
+
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="container clearfix" id="latest-news">
+        <div class="wrapper">
+
+            <h2>LATEST NEWS</h2>
+
+            <p>We help our client market to the world and inspire minds of people</p>
+
+            <div class="col-4">
+                <div><img src="#" alt=""></div>
+                <h3>This is blog post title.You can edit</h3>
+                <p>We help our client market to the world and inspire minds of people</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="col-4">
+                <div><img src="#" alt=""></div>
+                <h3>New women fashin of this yera.</h3>
+                <p>We help our client market to the world and inspire minds of people</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="col-4">
+                <div><img src="#" alt=""></div>
+                <h3>latest men suits.</h3>
+                <p>We help our client market to the world and inspire minds of people</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="col-4">
+                <div><img src="#" alt=""></div>
+                <h3>4 Tips on How to Bring Out the Best</h3>
+                <p>We help our client market to the world and inspire minds of people</p>
+                <a href="#">Read more</a>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="container" id="sponsor">
+        <div class="wrapper">
+            <div class="brand">
+                <span class="fa fa-dropbox fa-4x"></span>
+            </div>
+            <div class="brand">
+                <span class="fa fa-facebook fa-4x"></span>
+            </div>
+            <div class="brand">
+                <span class="fa fa-github fa-4x"></span>
+            </div>
+            <div class="brand">
+                <span class="fa fa-apple fa-4x"></span>
+            </div>
+            <div class="brand">
+                <span class="fa fa-android fa-4x"></span>
+            </div>
+            <div class="brand">
+                <span class="fa fa-amazon fa-4x"></span>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="container" id="contact">
+        <div class="wrapper clearfix">
+            <div class="info">
+                <h3>INFORMATION</h3>
+                    <!--                <p>We help our client market to the world and inspire minds of people</p>-->
+                    <div class="item clearfix">
+                        <div class="icon">
+                            <span class="fa fa-home"></span>
+                        </div>
+                        <div class="content">
+                            <ul>
+                                <li>California CA</li>
+                                <li>Afela Inc.</li>
+                                <li>48729</li>
+                                <li>star Apple st 54</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item clearfix">
+                        <div class="icon"><span class="fa fa-mobile fa lg"></span></div>
+                        <div class="Content">800-123456789</div>
+                    </div>
+                    <div class="item clearfix">
+                        <div class="icon"><span class="fa fa-envelope"></span></div>
+                        <div class="Content">noz@noz.pig</div>
+                    </div>
+            </div>
+
+            <div class="form">
+                <form action="">
+                    <div class="col-2">
+                        <input type=text placeholder="Name">
+                    </div>
+                    <div class="col-2">
+                        <input type=text placeholder="Name">
+                    </div>
+                    <div class="col-1">
+                        <textarea name="" id "" cols="30" rows="10">
+                           </textarea>
+                    </div>
+                    <button>SEND MESSAGE</button>
+                </form>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!--  -->
+
+    <footer class="container">
+        <div class="logo">BANANA</div>
+        <div class="social">
+            <a href="#" class="fa fa-twitter fa-lg"></a>
+            <a href="#" class="fa fa-facebook fa-lg"></a>
+            <a href="#" class="fa fa-instagram fa-lg"></a>
+            <a href="#" class="fa fa-linkedin fa-lg"></a>
+            <a href="#" class="fa fa-vimeo fa-lg"></a>
+        </div>
+        <div class="copy">
+            &copy;2017 BANANA | Design By Banana
+        </div>
+    </footer>
+</body>
+
+</html>

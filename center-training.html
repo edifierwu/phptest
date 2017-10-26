@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>置中練習</title>
+    <style>
+        .card {
+            width: 600;
+            height: 300;
+            background-color: #ccc;
+            /*            display: table;  第二種置中方式*/
+            text-align: center;
+            font-size: 0;
+        }
+
+        .card::before
+        /*行內置中*/
+
+            {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+
+        }
+
+        .card .pic {
+            width: 200px;
+            height: 200px;
+            background-color: #0af;
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+
+        .card .content {
+            width: 300px;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            text-align: left;
+            margin-left: 15px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="pic">
+            <img src="https://goo.gl/R9rR74" alt="" width="200" height="200">
+            </div>
+            <div class="content"> 
+            <h3>Title1</h3>
+            <p>sldfkjsladkj salkdjglksd sdjiioreirioe8i</p>
+            <a href="#">More...</a>
+        </div>
+    </div>
+    <br>
+    <div class="card">
+        <div class="pic">
+            <img src="https://goo.gl/Yjn9hZ" alt="" width="200" height="200">
+            </div>
+            <div class="content">
+            <h3>Title2</h3>
+            <p>sldfkjsladkj salkdjglksd sdjiioreirioe8i</p>
+            <a href="#">More...</a>
+         </div>
+    </div>
+</body>
+</html>
